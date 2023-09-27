@@ -36,7 +36,7 @@ ul > li{
 ul > li > a:hover{
     color: var(--primary);
 }
-header button{
+.btn-cv{
     padding: 10px 20px;
     font-weight: bold;
     background: var(--dark-primary);
@@ -45,8 +45,59 @@ header button{
     border-radius: 5px;
     cursor: pointer;
 }
-header button:hover{
+.btn-cv:hover{
     cursor: pointer;
     background-color: var(--primary);
     color: var(--secondary);
 }
+
+
+/* Section Hero Home Page */
+
+.hero-section{
+    background: var(--dark-primary);
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 120px 0px 120px;
+    letter-spacing: 2px;
+}
+.hero-section_title{
+    color: #c4c4c4;
+    font-size: 2rem;
+}
+.hero-section_title span{
+    color: var(--primary);
+}
+.social-icons{
+    margin: 20px 0;
+    display: flex;
+}
+.social-icons li{
+    list-style: none;
+    margin-left: 15px;
+}
+.social-icons li > a {
+    color: var(--secondary);
+}
+.social-icons li a > i{
+    font-size: 1.2rem;
+}
+.social-icons li a:hover {
+    color: var(--primary);
+}
+.btns{
+    margin-right: 15px;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--primary);
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: rgb(22, 121, 227);
+    color: var(--secondary);
+}  
