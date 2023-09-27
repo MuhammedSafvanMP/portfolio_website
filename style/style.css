@@ -1,0 +1,52 @@
+    /* Globel variable */
+:root{
+    --primary: #12bdff;
+    --dark-primary: #1b1f24;
+    --secondary: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: var(--dark-primary);
+    padding: 20px ;
+    color: var(--secondary);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .logo{
+   color: var(--primary);
+   font-weight: bold;
+   letter-spacing: 1px; 
+}
+header a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+ul{
+    display: flex;
+}
+ul > li{
+  list-style: none;
+  margin-right: 20px;
+}
+ul > li > a:hover{
+    color: var(--primary);
+}
+header button{
+    padding: 10px 20px;
+    font-weight: bold;
+    background: var(--dark-primary);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+header button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
