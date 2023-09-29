@@ -26,7 +26,7 @@ header a{
     text-decoration: none;
     color: var(--secondary);
 }
-ul{
+header  ul{
     display: flex;
 }
 ul > li{
@@ -101,3 +101,46 @@ ul > li > a:hover{
     background: rgb(22, 121, 227);
     color: var(--secondary);
 }  
+
+/* About me section */
+
+.about-section{
+    background: #22282f;
+    color: var(--secondary);
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    box-shadow: 10px 15px 40px var(--primary);
+}
+.about-section-desc {
+    margin-left: 100px;
+    max-width: 450px;
+}
+.about-section-desc > h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+.about-section-desc h4 > span{
+    color: var(--primary);
+}
+.about-section-desc ul{
+    margin: 10px 0;
+}
+.about-section-desc  li{
+    margin-bottom: 8px;
+    color: gray;
+}
+.about-section-desc li > strong{
+    color: var(--secondary);
+}
+.about-section-desc li > a{
+    text-decoration: none;
+    color: gray;
+}
