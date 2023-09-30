@@ -145,27 +145,27 @@ ul > li > a:hover{
     color: gray;
 }
 
-/* My works section */
+/* My skill section */
 
-.work-section{
+.skill-section{
     background: var(--dark-primary);
     color: var(--secondary);
     padding: 60px;
     text-align: center;
 }
-.work-section span {
+.skill-section span {
     color: var(--primary);
 }
-.work-section-title{
+.skill-section-title{
     font-size: 1.3rem;
-    font-weight: bold;
-}
-.work-section-items{
+    font-weight: boldskill
+}    
+.skill-section-items{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.work-section-box{
+.skill-section-box{
     background-color: #22282f;
     padding: 60px 30px;
     max-width: 300px;
@@ -176,34 +176,91 @@ ul > li > a:hover{
     cursor: pointer;
     transition: 1s;
 }
-.work-section-box:hover{
+.skill-section-box:hover{
     background-color: #1b1f24;
 }
-.work-section-box p{
+.skill-section-box p{
     color: gray;
     font-size: 14px;
 }
-.work-section-box a{
+.skill-section-box a{
     color: #feda75;
     margin-top: 20px;
     text-decoration: none;
 }
-.work-section-box-desc {
+.skill-section-box-desc {
     margin-top: 20px;
     margin-bottom: 10px;
 
 }
-.work-section-box-desc p{
+.skill-section-box-desc p{
     padding-top: 10px;
     line-height: 20px;
 }
-.work-section-icon{
+.skill-section-icon{
     background: var(--primary);
     padding: 10px;
     border-radius: 50%;
 }
-.work-section-icon:hover{
+.skill-section-icon:hover{
     background-color: var(--dark-primary);
+}
+
+    /* Works section */
+
+.works-section{
+    background: #22282f;
+    text-align: center;
+}
+.works-section h4{
+    padding-top: 40px;
+    font-size: 1.3rem;
+    color: var(--secondary);
+}
+.works-section h4 > span{
+    color: var(--primary);
+}
+.works-section a{
+    text-decoration: none;
+}
+.works-section-box-items{
+    padding: 60px 30px;
+    margin-left: 3px;
+}
+.works-section-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.works-section-box-items {
+    display: flex;
+    align-items: center;
+}
+.works-section-box img{
+    width: 250px;
+    border-radius: 5px;
+}
+.works-section-box-items li{
+    position: relative;
+    transition: 1s;
+}
+.works-section-box-items li:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.works-section-view{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+.works-section-view h5{
+    font-size: 15px;
+    color: var(--secondary);
+    margin-bottom: 2px;
+}
+.works-section-view a{
+    font-size: 14px;
+    color: var(--primary);
 }
 
     /* Contact section */
