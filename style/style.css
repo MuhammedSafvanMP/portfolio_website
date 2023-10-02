@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 header {
     background: var(--dark-primary);
     padding: 20px ;
@@ -202,6 +205,9 @@ ul > li > a:hover{
     padding: 10px;
     border-radius: 50%;
 }
+.skill-section-icon i{
+    color: var(--secondary);
+}
 .skill-section-icon:hover{
     background-color: var(--dark-primary);
 }
@@ -223,11 +229,7 @@ ul > li > a:hover{
 .works-section a{
     text-decoration: none;
 }
-.works-section-box-items{
-    padding: 60px 30px;
-    margin-left: 3px;
-}
-.works-section-box{
+.section-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,6 +237,8 @@ ul > li > a:hover{
 .works-section-box-items {
     display: flex;
     align-items: center;
+    padding: 60px 30px;
+    margin-left: 3px;
 }
 .works-section-box img{
     width: 250px;
@@ -301,3 +305,76 @@ footer a {
     text-decoration: none;
     color: var(--primary);
 }
+
+    /* Media queries */
+
+@media only screen and (max-width: 600px){
+        header{
+            flex-direction: column;
+        }
+        header > *{
+            margin-bottom: 10px;
+        }
+        /* Hero section */
+        .hero-section {
+            flex-direction: column;
+            padding: 40px;
+        }
+        .hero-section-img{
+            margin-top: 4rem !important ;
+        }
+        /* About section */
+        section.about-section {
+            flex-direction: column;
+        }
+        .about-section-desc {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+        /* My skills */
+        .skill-section{
+            padding: 30px 10px;
+        }
+        .skill-section-items {
+            align-items: center;
+            flex-direction: column;
+        }
+        .skill-section-box{
+            margin-bottom: 20px;
+            width: 100%;
+            margin-right: 0;
+        }
+        /* My works */
+        .works-section {
+            padding: 30px 10px;
+        }
+        .works-section-box{
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-right: 0;
+        }
+        .works-section-box-items{
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+        }
+        .works-section-box img {
+            padding-bottom: 1rem;
+            width: 300px;
+            padding-left: 12px;
+            border-radius: 10px;
+        }
+        .works-section-box-items li{
+            transition: 1s;
+        }
+        .works-section-box-items li:hover{
+            transform: scale(1.2);
+            z-index: 3;
+        }
+        /* Contact section */
+        .contact-section form input,
+        textarea {
+            width: 100%;
+        }
+    }
